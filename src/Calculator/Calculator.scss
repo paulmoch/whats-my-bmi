@@ -1,0 +1,95 @@
+@import "../assets/variables.scss";
+
+.Calculator {
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+  .scroll-wrapper {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+    width: 100%;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none; /* hide scrollbar: IE and Edge */
+    scrollbar-width: none; /* Firefox */
+
+    .scroll-wrapper::-webkit-scrollbar {
+      display: none;
+    }
+
+    .scroll-container {
+      display: flex;
+      justify-content: center;
+      width: 400%;
+      height: 100%;
+
+      .page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        scroll-snap-align: center;
+
+        .small-text {
+          font-size: 16px;
+          font-weight: 300;
+          color: $white;
+        }
+
+        .large-text {
+          font-size: 40px;
+          font-weight: 700;
+          color: $white;
+        }
+      }
+
+      input {
+        width: 110px;
+        height: 60px;
+        min-height: 40px;
+        padding: 20px 10px;
+        margin: 50px 0;
+        border-radius: 50px;
+        border-style: none;
+        font-size: 18px;
+        text-align: center;
+        font-family: $sans-serif;
+      }
+    }
+  }
+
+  .btn {
+    display: block;
+    background-color: $orange;
+    color: $black;
+    font-family: $sans-serif;
+    font-size: 16px;
+    width: 10%;
+    min-width: 100px;
+    min-height: 40px;
+    border-radius: 20px;
+    border-style: none;
+    padding: 8px 4px;
+    margin-bottom: 50px;
+    cursor: pointer;
+  }
+
+  .bmi-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+
+    .bmi {
+      margin-bottom: 20px;
+    }
+  }
+}

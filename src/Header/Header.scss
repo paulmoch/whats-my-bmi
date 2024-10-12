@@ -1,0 +1,89 @@
+@import "../assets/variables.scss";
+
+header {
+  height: 35%;
+  padding: 60px 60px 0 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    width: 120px;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    .logo {
+      width: 100px;
+      margin: 0;
+    }
+  }
+
+  .refresh {
+    width: 40px;
+    height: auto;
+    margin-right: 30px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .refresh {
+      margin: 0;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 5px;
+    width: 75%;
+    max-width: 500px;
+    height: 45px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $white;
+    border-radius: 300px;
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 110px;
+      list-style: none;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: lowercase;
+      cursor: pointer;
+      border-color: black;
+      border-width: 10px;
+
+      a {
+        text-decoration: none;
+        color: $grey;
+      }
+    }
+
+    li:hover {
+      background-color: $yellow;
+      border-radius: 300px;
+      height: 35px;
+      transition: 0.3s;
+
+      a {
+        color: $black;
+      }
+    }
+
+    .active {
+      color: aquamarine;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 40px;
+  }
+}

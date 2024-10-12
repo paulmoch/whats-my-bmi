@@ -1,0 +1,12 @@
+@import "./assets/variables.scss";
+
+.App {
+  background-color: $bg-accent;
+  border-radius: 50px;
+  font-family: $sans-serif;
+  width: 70svw;
+  min-width: 350px;
+  height: 70svh;
+  min-height: 500px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}

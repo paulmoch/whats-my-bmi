@@ -1,4 +1,4 @@
-# BMI Calculator
+# What's My BMI
 
 What's My BMI is a simple and intuitive web application that helps users calculate their Body Mass Index (BMI).
 

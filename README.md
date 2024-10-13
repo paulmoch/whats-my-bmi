@@ -1,8 +1,13 @@
-# React + Vite
+# BMI Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+What's My BMI is a simple and intuitive web application that helps users calculate their Body Mass Index (BMI).
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Demo
+
+https://paulmoch.github.io/whats-my-bmi/
+## Features
+
+- **User Input**: Enter your height and weight.
+- **Instant Calculation**: Get your BMI and health category immediately.
+- **Responsive Design**: Accessible on all devices.

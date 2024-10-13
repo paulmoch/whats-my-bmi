@@ -11,3 +11,7 @@ https://paulmoch.github.io/whats-my-bmi/
 - **User Input**: Enter your height and weight.
 - **Instant Calculation**: Get your BMI and health category immediately.
 - **Responsive Design**: Accessible on all devices.
+## Technologies
+
+- React with Vite
+- HTML, SCSS, JavaScript
